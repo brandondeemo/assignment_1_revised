@@ -1,6 +1,5 @@
 from kalah import reverse_board
 from runner import Player, Mercy
-import operator
 import copy
 
 
@@ -135,12 +134,6 @@ class User(Player):
 
 
 
-
-    def nodeInopenlist(self,node,list):
-        for nodetemp in list:
-            if operator.eq(nodetemp.board,node.board):
-                return True
-        return False
 
 
     def g(self, step, board):

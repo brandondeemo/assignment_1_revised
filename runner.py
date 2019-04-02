@@ -107,7 +107,7 @@ class Mercy(Player):
 
 class Runner:
     def __init__(self, num_of_games=1):
-        from player_v1 import User
+        from player_v2 import User
         self.user = User()
         self.opponent = Opponent()
         self.wins = 0
@@ -133,7 +133,7 @@ class Runner:
     def run_game(self):
         for i in range(self.num_of_games):
             print("New game!")
-            new_game = Kalah([8, 2, 7, 2, 2, 3, 0, 5, 1, 5, 3, 5, 5, 0])
+            new_game = Kalah([2, 6, 3, 6, 3, 4, 0, 5, 5, 2, 3, 5, 4, 0])
             turn = 0
             print(str(turn)+"th turn")
             new_game.show_board()
